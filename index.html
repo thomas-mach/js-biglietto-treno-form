@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-biglietto-treno-form</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div>
+        <div class="form" id="warning">
+            <div>
+                <div><label for="distanza">Quanti chilometri vuoi viaggiare?</label></div>
+                <div><input name="distanza" id=distanza type="text" placeholder="km"></div> 
+            </div>
+
+            <div>
+                <label>Scegli fascia d'eta
+                <div>
+                    <select name="eta" id="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over65">Over 65</option>
+                        <option value="nessuno">Altro</option>
+                    </select>
+                </div>
+                </label>
+            </div>
+
+            <input id="submit" type="submit" value="Invia" />
+        </div>
+        
+        <div class="biglietto">
+        <div id="prezzoBase">Prezzo base: </div>
+        <div id="sconto">Sconto: </div>
+        <div id="totale">Totale: </div>
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

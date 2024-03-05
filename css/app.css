@@ -1,0 +1,25 @@
+.form{
+    margin: 50px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.biglietto{
+    margin: 50px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;  
+}
