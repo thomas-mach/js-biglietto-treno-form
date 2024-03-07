@@ -8,33 +8,53 @@
 </head>
 <body>
     <div>
-        <div class="form" id="warning">
-            <div>
-                <div><label for="distanza">Quanti chilometri vuoi viaggiare?</label></div>
-                <div><input name="distanza" id=distanza type="text" placeholder="km"></div> 
-            </div>
-
-            <div>
-                <label>Scegli fascia d'eta
+        <div class="form">
+            <h3>CALCOLO BIGLIETTO</h3>
+            <div class="form_header">
                 <div>
-                    <select name="eta" id="eta">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="over65">Over 65</option>
-                        <option value="nessuno">Altro</option>
-                    </select>
+                    <label for="">Nome e Cognome</label>
+                    <input type="text" name="" id="nome">
                 </div>
-                </label>
+                <div>
+                    <label for="distanza">Quanti chilometri vuoi viaggiare?</label>
+                    <input name="distanza" id=distanza type="text">
+                </div>
+                <div>
+                    <label>Scegli fascia d'eta
+                        <select name="eta" id="eta">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over65">Over 65</option>
+                            <option value="nessuno" selected>Nessuno</option>
+                        </select>
+                    </label>
+                </div>
             </div>
-
-            <input id="submit" type="submit" value="Invia" />
-        </div>
-        
-        <div class="biglietto">
-        <div id="prezzoBase">Prezzo base: </div>
-        <div id="sconto">Sconto: </div>
-        <div id="totale">Totale: </div>
+            <div class="form_footer">
+                <input id="submit" type="submit" value="Invia" />
+                <input type="button" name="" value="Anulla" id="anulla">
+            </div>
+            <p class="warning" id="warning"></p>
         </div>
 
+        <div class="biglietto" id="biglietto">
+            <h3>BIGLIETTO</h3>
+            <div>
+                <span>Nome e Cognome:</span>
+                <span id="nomeOutPut"></span>
+            </div>
+            <div>
+                <span>Prezzo base:</span>
+                <span id="prezzoBase"></span>
+            </div>
+            <div>
+                <span>Sconto:</span>
+                <span id="sconto"></span>
+            </div>
+            <div>
+                <span>Totale:</span>
+                <span id="totale"></span>
+            </div>
+        </div>
     </div>
     <script src="./js/app.js"></script>
 </body>
